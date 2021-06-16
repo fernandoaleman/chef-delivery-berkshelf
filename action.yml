@@ -1,0 +1,17 @@
+---
+name: 'Chef Delivery Action'
+author: 'Fernando Aleman'
+description: >
+  'Run Chef delivery with chef-workstation 21.6.467.
+  Based on Jason Fields Chef Delivery Actions'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+branding:
+  icon: 'tool'
+  color: 'red'
+inputs:
+  gems:
+    description: 'String of gems to install'
+    required: false
+    default: ''
